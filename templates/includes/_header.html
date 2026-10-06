@@ -1,0 +1,15 @@
+<header class="header__root">
+  <div class="header__container">
+    <a href="{% url 'root:home' %}" class="header__brand">Pinfold</a>
+    <div class="header__nav">
+      <div class="header__links">
+        <a href="{% url 'root:home' %}" class="header__link">Home</a>
+        <a href="{% url 'root:about' %}" class="header__link">About</a>
+      </div>
+      <div class="header__actions">
+        <a href="#" class="header__action">Sign Up</a>
+        <a href="{% url 'accounts:user_login' %}" class="header__action-primary">Sign In</a>
+      </div>
+    </div>
+  </div>
+</header>

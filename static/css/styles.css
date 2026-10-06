@@ -1,0 +1,233 @@
+/*
+================
+FONTS
+================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+================
+GLOBAL
+================
+*/
+:root {
+  --light-color: #ffffea;
+  --gray-color: #d5d7d7;
+  --dark-color: #130501;
+  --primary-color: #ff5e5b;
+  --secondary-color: #ffed66;
+  --info-color: #00cecb;
+
+  --container-max-width: 1200px;
+  --container-padding-x: 12px;
+  --container-padding-x-md: 12px;
+  --container-padding-x-sm: 12px;
+  --container-padding-y: 0px;
+  --container-padding-y-md: 4px;
+  --container-padding-y-sm: 8px;
+
+  --font-size: 16px;
+  --font-size-md: 12px;
+  --font-size-sm: 8px;
+
+  --gap: 16px;
+  --gap-md: 8px;
+  --gap-sm: 4px;
+
+  --radius: 4px;
+  --radius-md: 2px;
+  --radius-sm: 1px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 10px 0;
+}
+
+/*
+================
+Header
+================
+*/
+
+.header__root {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-color);
+  padding: 16px 0px;
+}
+
+.header__container {
+  max-width: var(--container-max-width);
+  padding: var(--container-padding-x);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  margin: 0 auto;
+}
+.header__brand {
+  text-decoration: none;
+  font-size: var(--font-size);
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+.header__link {
+  text-decoration: none;
+  color: var(--light-color);
+  font-weight: 400;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.header__action {
+  background: var(--dark-color);
+  padding: 6px 12px;
+  border: 1px solid var(--light-color);
+  color: var(--light-color);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header__action-primary {
+  background: var(--primary-color);
+  padding: 6px 12px;
+  border: 1px solid var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.about__container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.about__heading {
+  padding: 16px 8px;
+  border-radius: var(--radius);
+  border-bottom: 2px dashed var(--dark-color);
+}
+.about_title {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 16px;
+}
+
+.about__content {
+  padding: 8px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.about__footer {
+  background-color: var(--dark-color);
+  padding: 24px;
+  border-radius: 4px;
+  color: white;
+}
+
+.support__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
